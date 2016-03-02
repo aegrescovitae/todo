@@ -1,0 +1,9 @@
+<h1 class='todo'>To Do</h1>
+<% @lists.each do |list| %>
+  <div class='listitems'>
+    <input  type="checkbox" class="strikethrough" name="" value="" />
+    <%= link_to list.name, list_path(list), class: 'listitem' %>
+     <br />
+  </div>
+<% end %>
+
